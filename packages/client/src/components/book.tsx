@@ -6,7 +6,7 @@ interface Books {
   author: string
 }
 
-function UseBook() {
+function Book() {
   const { loading, error, data } = useQuery(GET_BOOKS)
 
   if (loading) return <p>Loading...</p>
@@ -20,4 +20,4 @@ function UseBook() {
   ))
 }
 
-export default UseBook
+export default Book
