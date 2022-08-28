@@ -1,6 +1,6 @@
-# frontend-monorepo
+# use-apollo
 
-Opinionated Frontend Monorepo Starter Template
+🚀 Use Apollo Example
 
 ## License
 
