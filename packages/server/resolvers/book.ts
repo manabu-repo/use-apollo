@@ -1,6 +1,6 @@
-import { books } from '../data/book'
+import { books } from '../data'
 
-export const resolvers = {
+export const bookResolvers = {
   Query: {
     books: () => books,
   },
