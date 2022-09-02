@@ -1,19 +1,33 @@
+import { useAge } from '@use-kit/hooks'
+
 export const users = [
   {
-    id: 'user-akashi',
+    id: 'akashi-sai',
     name: 'akashi',
-    age: 25,
+    birth: '1997-09-28',
+    age: useAge('1997-09-28'),
   }, {
-    id: 'user-asuka',
+    id: 'saito-asuka',
     name: 'asuka',
-    age: 24,
+    birth: '1998-08-10',
+    age: useAge('1998-08-10'),
   }, {
-    id: 'user-shiori',
+    id: 'kubo-shiori',
     name: 'shiori',
-    age: 21,
+    birth: '2001-07-14',
+    age: useAge('2001-07-14'),
   }, {
-    id: 'user-nagi',
-    name: 'nigi',
-    age: 17,
+    id: 'inoue-nagi',
+    name: 'nagi',
+    birth: '2005-02-17',
+    age: useAge('2005-02-17'),
+  },
+  {
+    id: 'umezawa-minami',
+    name: 'ume',
+    birth: '1999-01-06',
+    age: useAge('1999-01-06'),
   },
 ]
+
+// console.log('user', users)

@@ -59,11 +59,13 @@ importers:
 
   packages/server:
     specifiers:
+      '@use-kit/hooks': 0.0.1-beta.0
       apollo-server: ^3.10.2
       apollo-server-core: ^3.10.2
       graphql: ^16.6.0
       typescript: ^4.6.4
     devDependencies:
+      '@use-kit/hooks': 0.0.1-beta.0
       apollo-server: 3.10.2_graphql@16.6.0
       apollo-server-core: 3.10.2_graphql@16.6.0
       graphql: 16.6.0
@@ -873,6 +875,12 @@ packages:
     resolution: {integrity: sha512-fbF6oTd4sGGy0xjHPKAt+eS2CrxJ3+6gQ3FGcBoIJR2TLAyCkCyI8JqZNy+FeON0AhVgNJoUumVoZQjBFUqHkw==}
     dev: true
 
+  /@use-kit/hooks/0.0.1-beta.0:
+    resolution: {integrity: sha512-Mz4T4WYcVgdzrv+GgbLOwENs9SGCnc1F+LCsquygSfHnHjG1oyQEnSNn+DBIqrMJJdc+npsQ80Rr6jN8yXyX2g==}
+    dependencies:
+      dayjs: 1.11.5
+    dev: true
+
   /@vitejs/plugin-react/2.0.1_vite@3.0.9:
     resolution: {integrity: sha512-uINzNHmjrbunlFtyVkST6lY1ewSfz/XwLufG0PIqvLGnpk2nOIOa/1CACTDNcKi1/RwaCzJLmsXwm1NsUVV/NA==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -1561,6 +1569,10 @@ packages:
 
   /csstype/3.1.0:
     resolution: {integrity: sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==}
+    dev: true
+
+  /dayjs/1.11.5:
+    resolution: {integrity: sha512-CAdX5Q3YW3Gclyo5Vpqkgpj8fSdLQcRuzfX6mC6Phy0nfJ0eGYOeS7m4mt2plDWLAtA4TqTakvbboHvUxfe4iA==}
     dev: true
 
   /debug/2.6.9:
