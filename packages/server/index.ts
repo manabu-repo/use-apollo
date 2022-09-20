@@ -2,16 +2,11 @@ import { ApolloServer, gql } from 'apollo-server'
 import { ApolloServerPluginLandingPageLocalDefault } from 'apollo-server-core'
 
 import { bookTypeDefs, userTypeDefs } from './schema'
-import { bookResolvers } from './resolvers'
-
-const typeDefs = bookTypeDefs
-// console.log('defs', typeDefs)
-
-const resolvers = bookResolvers
+import { bookResolvers, userResolvers } from './resolvers'
 
 const server = new ApolloServer({
-  typeDefs,
-  resolvers,
+  typeDefs: [bookTypeDefs, userTypeDefs],
+  resolvers: [bookResolvers, userResolvers],
   csrfPrevention: true,
   cache: 'bounded',
   plugins: [

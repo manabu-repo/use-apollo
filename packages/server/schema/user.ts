@@ -4,7 +4,8 @@ export const userTypeDefs = gql`
 type User {
   id: String
   name: String
-  age: Number
+  age: Int
+  birth: String
 }
 
 type Query {
